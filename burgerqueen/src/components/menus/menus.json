@@ -1,0 +1,83 @@
+{   "desayunos": 
+    {
+        "opciones" : [
+            {
+                "producto" : "Café americano",
+                "precio" : 5
+            },
+            {
+                "producto" : "Café con Leche",
+                "precio" : 7
+            },
+            {
+                "producto" : "Sandwich jamón y queso",
+                "precio" : 10
+            },
+            {
+                "producto" : "Jugo frutas",
+                "precio" : 7
+            }
+        ]
+    },
+    "Almuerzo/cena":
+    {
+        "opciones": [
+            {
+                "producto" : "Hamburguesa Simple Res",
+                "precio" : 10
+            },
+            {
+                "producto" : "Hamburguesa Simple Pollo",
+                "precio" : 10
+            },
+            {
+                "producto" : "Hamburguesa Simple Vegetariana",
+                "precio" : 10
+            },
+            {
+                "producto" : "Hamburguesa Doble res",
+                "precio" : 15
+            },
+            {
+                "producto" : "Hamburguesa Doble Pollo",
+                "precio" : 15
+            },
+            {
+                "producto" : "Hamburguesa Doble Vegetariana",
+                "precio" : 15
+            },
+            {
+                "producto" : "Adición de Queso",
+                "precio" : 1
+            },
+            {
+                "producto" : "Adición de Huevo",
+                "precio" : 1
+            },
+            {
+                "producto" : "Papas Fritas",
+                "precio" : 5
+            },
+            {
+                "producto" : "Aros de Cebolla",
+                "precio" : 5
+            },
+            {
+                "producto" : "Agua 500 ml",
+                "precio" : 5
+            },
+            {
+                "producto" : "Agua 750 ml",
+                "precio" : 7
+            },
+            {
+                "producto" : "Bebida/Gaseosa 500 ml",
+                "precio" : 7
+            },
+            {
+                "producto" : "Bebida/Gaseosa 750 ml",
+                "precio" : 10
+            }
+        ]
+    }
+}

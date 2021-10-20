@@ -1,0 +1,62 @@
+header{
+    width: 100vw;
+    height: 135px;
+    display: grid;
+    grid-template-columns: 150px 150px 150px 300px 300px 150px 150px;
+    grid-template-rows: 23px 35px 35px 35px;
+    grid-template-areas: 
+    "letters letters . . . dish chef"
+    "letters letters . hours . dish chef"
+    ". burguer . hours . dish chef"
+    ". burguer . . . waiter kitchen";    
+}
+
+.letters {
+    width: 470px;
+    height: 109px;
+    grid-area: letters;
+    align-self: center;
+    margin-top: 15px;
+}
+
+.burguer {
+    width: 110px;
+    height: 95px;
+    grid-area: burguer;
+    align-self: center;
+}
+
+.hours{
+    font-size: 52px;
+    line-height: 63px;
+    grid-area: hours;
+}
+
+.dish{
+    width: 122px;
+    height: 111px;
+    grid-area: dish;
+    margin-top: 5px;
+    justify-self: center;
+}
+
+.waiter{
+    font-size: 15px;
+    grid-area: waiter;
+    justify-self: center;
+}
+
+.chef{
+    width: 122px;
+    height: 111px;
+    grid-area: chef;
+    align-self: start;
+    margin-top: 5px;
+    justify-self: center;
+}
+
+.kitchen{
+    font-size: 15px;
+    grid-area: kitchen;
+    justify-self: center;
+}

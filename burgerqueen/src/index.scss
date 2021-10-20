@@ -1,0 +1,26 @@
+body {
+  background-color: rgba(26, 22, 47, 1);
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Ruda', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+header{
+  background: linear-gradient(180deg, #1DE0FE -37.67%, #4A258F 49.32%, #4A258F 78%, #E271C1 140%);
+  h2{
+    color: #FF96E0;
+  }   
+  h4 {
+    color: #62EFFF; 
+  }
+}
+
+/*code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}*/
+
+
