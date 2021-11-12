@@ -64,8 +64,7 @@ export const reducer = (state, action) => {
         return {...state, [action.fields]: action.inputs}    
     // cleanInputs limpia los campos retornando el estado inicial limpio
     case "cleanInputs":
-        return initialStateClean
-        
+        return initialStateClean   
     default:
     throw new Error();
     } 
