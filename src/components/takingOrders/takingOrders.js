@@ -7,6 +7,7 @@ import '../modal/modal.scss'
 
 
 
+
 const Takingorders = ({state, on_change, handleInputChange, handleCleaner}) => {
 
     let text=[], subtotal=[], cant, name, table, quants 

@@ -1,7 +1,11 @@
 import { fireEvent, render} from '@testing-library/react';
 import TakingOrders from './takingOrders'
-
+import {reducer, initialStateClean } from '../../hooks/reducer'
 import {state, handleCleaner, handleInputChange, on_change } from './mockTakingOrders'
+
+    /* const initialState = JSON.parse(JSON.stringify(initialStateClean));
+    const [state, dispatch] = useReducer(reducer, initialState); */
+
 
 describe('TakingOrders', () => {
 
@@ -9,11 +13,9 @@ describe('TakingOrders', () => {
     const setup = () => {
         const utils = render(<TakingOrders
             state={state}
-            menuData={state.menuData}
             menuState={Object.values(state.menuState)}
             on_change={on_change}
             handleInputChange={handleInputChange}
-            prices={state.totalPrices}
             handleCleaner={handleCleaner}
              />)
 
@@ -40,11 +42,13 @@ describe('TakingOrders', () => {
         console.log(input.value);
         console.log(state.menuState);
     })
-    test('Debería guardar el nombre del cliente al escribir en el input', ()=> {
+    test.only('Debería guardar el nombre del cliente al escribir en el input', ()=> {
         const {inputName} = setup();
         fireEvent.change(inputName, {target: {value: 'Maria'}});
-        expect(handleInputChange).toHaveBeenCalledTimes(1);
-        /* expect(inputName.value).toBe('Maria'); */
+        console.log(inputName);
+        /* expect(handleInputChange).toHaveBeenCalledTimes(1); */
+        /* expect(inputName.value).toEqual('Maria') */
+        expect(inputName.value).toHaveValue('María');
         console.log(inputName.value)
     })
     test('Debería guardar el número de mesa al seleccionar', ()=> {
