@@ -1,0 +1,101 @@
+.modal {
+    background-color: rgba(0,0,0, 0.75);
+    position: fixed;
+    z-index: 999;
+    width: 1366px;
+    height: 1024px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+
+    h2, h1 {
+        color:blanchedalmond;
+
+    }
+
+}
+.modal.isOpen {
+    display: flex;
+}
+
+.modalContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    width: 700px;
+    height: 650px;
+    overflow-y: auto;
+    margin-bottom: 120px;
+
+    .closeContainer {
+        display: flex;
+        justify-content: flex-end;
+        
+        img {
+            margin-right: 10px;
+            margin-top: 10px;
+            width: 50px;
+            height: 50px;
+        }
+    }
+
+    h1 {
+        align-self: center;
+    }
+
+    
+}       
+
+.childrenContainer {
+    margin-left: 32px;
+    display: flex;
+    flex-direction: column;
+    button {
+        align-self: center;
+        justify-self: center;
+        width: 20vh;
+        height: 7vh;
+        border-radius: 8px;
+        margin-bottom: 30px;
+        padding-right: 10px;
+        padding-left: 10px;
+        margin-top: 30px;
+    }
+    textarea {
+        width: 80%;
+        height: 80px;
+        overflow-y: auto;
+        margin-right: 32px;
+        align-self: center;
+        text-align: center;
+    }
+}
+
+.client{
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+
+.productList{
+    grid-area: product;
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+}
+.product span{
+    margin-right: 10px;
+}
+.pricesNumber{
+    grid-area: price;  
+}
+.totalPrice{
+    display:flex;
+    border-top: 2px solid #1DE0FE;
+    justify-content: space-between;
+    width: 86%;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+

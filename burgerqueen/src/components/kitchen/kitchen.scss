@@ -1,0 +1,89 @@
+.orderkitchens{
+
+    display: flex;
+    flex-flow: row wrap;
+    width: 1366px;
+    height:1024px;
+    justify-content: space-around;
+    
+
+    .orderSummary{
+        background-color: var(--ligth-purple);
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        height: 800px;
+        margin-top: 50px;
+        border: 3px yellow solid;
+        border-radius: 10px;
+        overflow-y: auto;
+        margin-left: 15px;
+
+
+        h1{
+            color: var(--pink);
+            align-self: center;
+        }
+
+        p {
+            color: var(--ligth-blue);
+            text-align: center;
+            font-size: 24px;
+        }
+
+        .products{
+            display: flex;
+            flex-direction: row;
+            font-size: 24px;  
+            margin-left: 28px;
+            
+            h4{
+                margin-right: 10px; 
+                justify-self: center;
+                font-size: 24px;
+                color: yellow;
+            }
+
+            h3{
+                color: var(--pink);
+            }
+
+            
+        }
+        .kitchenComment {
+            width: 80%;
+            height: 80px;
+            align-self: center;
+            text-align: center;
+            color:var(--ligth-blue);
+            font-size: 20px;
+        }
+        .btnKitchen {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding-top: 50px;
+            button{
+            box-sizing: border-box;
+            font-size: 30px;
+            align-self: center;
+            justify-self: center;
+            width: 20vh;
+            height: 80px;
+            margin-bottom: 30px;
+            padding-right: 10px;
+            padding-left: 10px;
+            margin-top: 30px;
+            border: 3px yellow solid;
+            border-radius: 10px;
+            color: #342D57;
+            }
+            .btnReceived {
+            background-color: #E76262;
+            }
+            .btnReady {
+            background-color: #79CB6B;
+            }
+        }
+    }    
+}

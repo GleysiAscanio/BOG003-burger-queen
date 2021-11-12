@@ -1,0 +1,10 @@
+.containerPrincipal{
+    display: grid;
+    width: 100%;
+    height: 890px;
+    grid-template-columns: 25% 50% 25%;
+    grid-template-areas: 
+        "menucontainer takingorders tablestatus";
+
+}
+

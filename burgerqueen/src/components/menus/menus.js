@@ -1,44 +1,23 @@
 import React, {useState} from 'react'
+import Hamburguesa from './img/Hamburguesa.webp'
+import Sandwich from './img/Sandwich.webp'
+import './menus.scss'
 
-const Menus = (props) => {
-    const {onAction} = props;
-    const [style, setStyle] = useState(false);
+const Menus = ({dispatch, actionA, actionB}) => {
+    // Se iniacializa el useState
+    const [style, setStyle] = useState(true);
+    // Se declaran dos estilos según el caso
     const bgStyle = {color: '#62EFFF'}
-    const bgStyle2 = { boxShadow: '#FFFFFF'}
-    const btnBreakfast = document.getElementById('breakfast');
-    const btnLunch = document.getElementById('lunch');
-    let saveId = '';
-    //console.log('Afuera', saveId);
-    
-    return(
-    <div>
-        <button className='button-menu' id='breakfast'>
-            <h3 className='menus' onClick={ () => {
-                saveId = btnBreakfast.id;
-                onAction(saveId);
-                setStyle(!style);
-            }} style={style ? bgStyle2 : bgStyle}>desayuno</h3>
-        </button>
-        <button className='button-menu' id='lunch'>
-            <h3 className='menus' onClick={ () => {
-                saveId = btnLunch.id;
-                onAction(saveId);
-                setStyle(!style);
-            } } style={style ? bgStyle : bgStyle2}>almuerzo</h3>
-        </button>
+    const bgStyle2 = { boxShadow: 'inset 2px 4px 50px 50px rgba(255,255,255,0.52)'}
+    return (
+    <div className='menuContainer'>
+        {/* A los botones  se les asigna un evento click que llama el dispatch con el caso ActionA o ActionB
+         y alterna el estilo, aplicando el bgStyle o bgStyle2 según el operador ternario */}
+        <img src={Sandwich} alt='Sandwich' onClick = { (e) => { dispatch({type:actionA}) ; setStyle(!style) }}style={style ? bgStyle2 : bgStyle}/>
+
+        <img src={Hamburguesa} alt='burguer' onClick = { (e) => { dispatch({type:actionB}) ; setStyle(!style) }}style={style ? bgStyle : bgStyle2}/>
     </div>
     )
-
- /*    return(
-        <div>
-            <button className='button-menu' id='breakfast'>
-                <h3 className='menus' onClick={() => onAction(name)} >desayuno, {name}</h3>
-            </button>
-            <button className='button-menu' id='lunch'>
-                <h3 className="menus" onClick={() => onAction(name)} >almuerzo, {name} </h3>
-            </button>
-        </div>
-        ) */
 }
 
 export default Menus

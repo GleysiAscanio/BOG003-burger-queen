@@ -1,0 +1,16 @@
+.menuContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 890px;
+    background-color:#342D57;
+        /* position:fixed; */
+    grid-area: menucontainer;
+    position: sticky;
+        img {
+            padding: 40px 5px 40px 5px;
+            border: 2px solid yellow;
+            height: 35vh;
+            width: 95%;
+        }
+}

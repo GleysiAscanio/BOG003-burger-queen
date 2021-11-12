@@ -1,26 +1,143 @@
+:root {
+      /*Colores*/
+  --pink: #FF96E0;
+  --ligth-blue: #62EFFF;
+  --ligth-purple: #342D57;
+}
+
 body {
   background-color: rgba(26, 22, 47, 1);
   width: 100%;
-  height: 100%;
+  height: 1024px;
   margin: 0;
   font-family: 'Ruda', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  .root {
+    height: 1024px;
+  }
 }
 
 header{
   background: linear-gradient(180deg, #1DE0FE -37.67%, #4A258F 49.32%, #4A258F 78%, #E271C1 140%);
   h2{
-    color: #FF96E0;
+    color: var(--pink);
   }   
   h4 {
-    color: #62EFFF; 
+    color: var(--ligth-blue); 
   }
 }
 
-/*code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
-}*/
+section {
+  .infoTable {
+    select {
+      background-color: var(--ligth-purple);
+      font-size: 24px;
+      color: var(--ligth-blue);
+      border: 1px solid yellow;
+      border-radius: 5px;
+    }
+  }
+  .orderContainer {
+    h6 {
+      text-align: left;
+      font-size: 24px;
+      color: var(--pink);
+    }
+    input {
+      font-size: 24px;
+      text-align: center;
+      color: var(--pink);
+      border: 2px solid yellow;
+      border-radius: 3px;
+      background-color: var(--ligth-purple);
+    }
+    p{
+      font-size: 24px;
+      color:yellow;
+    }
+  }
+  .totalContainer {
+    div {
+      p {
+        font-size: 24px;
+        color: yellow;
+      }
+    }
+  }
+  h3 {
+      font-size: 24px;
+      color: #FF96E0;
+  }
+  .nameUser {
+    font-size: 24px;
+    color: var(--pink);
+    background-color: var(--ligth-purple);
+    border-color: yellow;
+    border-radius: 10px;
+  }
+  p {
+    font-size: 24px;
+    color: var(--ligth-blue);
+  }
+  button {
+    background-color: var(--ligth-purple);
+    color: var(--pink);
+    font-size: 34px;
+  }
+}
+
+.tablesContainer{
+  h4{
+    font-size: 24px;
+    color: var(--ligth-blue);
+  }
+  h3 {
+    font-size: 24px;
+    color: var(--ligth-blue);
+  }
+  button {
+    background-color: var(--ligth-purple);
+    color: var(--pink);
+    border: 1px solid yellow;
+  }
+}
+
+article {
+  .modalContainer{
+    background-color: var(--ligth-purple);
+    border: 2px solid yellow;
+    border-radius: 23px;
+    
+    h1 {
+      font-size: 30px;
+      color: var(--pink);
+    }
+
+    h2 {
+      color: var(--pink);
+    }
+
+    p{
+      color: yellow;
+      font-size: 24px;
+    }
+    .childrenContainer{
+      button{
+        color: var(--pink);
+        background-color: var(--ligth-purple);
+        font-size:24px;
+        border: 2px solid yellow;
+      }
+      textarea {
+        font-size: 20px;
+        color: var(--ligth-blue);
+        background-color: #443E67;
+      }
+    }
+  }
+}
+
+
 
 

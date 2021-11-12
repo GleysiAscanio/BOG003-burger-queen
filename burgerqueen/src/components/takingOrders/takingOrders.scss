@@ -1,0 +1,101 @@
+section {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  overflow-y: scroll;
+
+  .message {
+    align-self: center;
+  }
+
+  .infoTable {
+    select {
+      width: 120px;
+      height: 50px;
+    }    
+  }
+    .orderContainer{
+        color: white;
+        display: grid;
+        width: 100%;
+        height: 100px;
+        grid-area: takingorders;
+        grid-template-columns: 15% 70% 15%;
+        grid-template-areas: 
+            "Cantidad Producto Precio";
+       
+        p{
+            align-self: left;
+            justify-self: left;
+            grid-area: Precio;
+            margin-top: 55px;
+        }
+        input{
+            align-self: center;
+            justify-self: center;
+            grid-area: Cantidad;
+            margin-left: 25px;
+            width: 65px;
+            height: 51px;
+        }
+        h6 {
+            align-self: left;
+            justify-self: left;
+            grid-area: Producto;
+            margin-left: 25px;
+
+        }
+    }
+    .infoTable {
+        display: flex;
+        justify-content: space-evenly;
+        margin-top: 30px;
+    }
+    h3 {
+        align-self: flex-start;
+        margin-bottom: 30px;
+        margin-right: 15px;
+     }
+    .nameUser {
+        align-self:flex-end;
+        width: 472px;
+        height: 35px;
+        margin-bottom: 25px;
+        margin-right: 20px;
+    }
+    .totalContainer {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        margin-top: 20px;
+        margin-right: 20px;
+        p {
+            margin-left: 10px;
+        }
+        div {
+            display: flex;
+            border-top: 3px solid #62EFFF;
+            width: 150px;
+            margin-left: 80px;
+            justify-content: center;
+            p {
+                justify-self:  center;
+            }
+        }
+    }   
+    .divBton { 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 50px;
+    padding-bottom: 50px;
+        .btnOrders {
+        align-self: center;
+        padding: 0px;
+        width: 20vh;
+        height: 80px;
+        border: 2px solid yellow;
+        border-radius: 8px;
+        }
+    }
+}

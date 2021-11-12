@@ -1,21 +1,25 @@
-{   "desayunos": 
+[{   "desayunos": 
     {
         "opciones" : [
             {
                 "producto" : "Café americano",
-                "precio" : 5
+                "precio" : 5,
+                "key" : "a"
             },
             {
                 "producto" : "Café con Leche",
-                "precio" : 7
+                "precio" : 7,
+                "key" : "b"
             },
             {
                 "producto" : "Sandwich jamón y queso",
-                "precio" : 10
+                "precio" : 10,
+                "key" : "c"
             },
             {
                 "producto" : "Jugo frutas",
-                "precio" : 7
+                "precio" : 7,
+                "key" : "d"
             }
         ]
     },
@@ -24,60 +28,74 @@
         "opciones": [
             {
                 "producto" : "Hamburguesa Simple Res",
-                "precio" : 10
+                "precio" : 10,
+                "key" : "e"
             },
             {
                 "producto" : "Hamburguesa Simple Pollo",
-                "precio" : 10
+                "precio" : 10,
+                "key" : "f"
             },
             {
                 "producto" : "Hamburguesa Simple Vegetariana",
-                "precio" : 10
+                "precio" : 10,
+                "key" : "g"
             },
             {
                 "producto" : "Hamburguesa Doble res",
-                "precio" : 15
+                "precio" : 15,
+                "key" : "h"
             },
             {
                 "producto" : "Hamburguesa Doble Pollo",
-                "precio" : 15
+                "precio" : 15,
+                "key" : "i"
             },
             {
                 "producto" : "Hamburguesa Doble Vegetariana",
-                "precio" : 15
+                "precio" : 15,
+                "key" : "j"
             },
             {
                 "producto" : "Adición de Queso",
-                "precio" : 1
+                "precio" : 1,
+                "key" : "k"
             },
             {
                 "producto" : "Adición de Huevo",
-                "precio" : 1
+                "precio" : 1,
+                "key" : "l"
             },
             {
                 "producto" : "Papas Fritas",
-                "precio" : 5
+                "precio" : 5,
+                "key" : "m"
             },
             {
                 "producto" : "Aros de Cebolla",
-                "precio" : 5
+                "precio" : 5,
+                "key" : "n"
             },
             {
                 "producto" : "Agua 500 ml",
-                "precio" : 5
+                "precio" : 5,
+                "key" : "o"
             },
             {
                 "producto" : "Agua 750 ml",
-                "precio" : 7
+                "precio" : 7,
+                "key" : "p"
             },
             {
                 "producto" : "Bebida/Gaseosa 500 ml",
-                "precio" : 7
+                "precio" : 7,
+                "key" : "q"
             },
             {
                 "producto" : "Bebida/Gaseosa 750 ml",
-                "precio" : 10
+                "precio" : 10,
+                "key" : "r"
             }
         ]
     }
-}
+}]
